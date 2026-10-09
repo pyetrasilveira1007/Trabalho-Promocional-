@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Reconto de Clarice | Acervo Literário</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+  
+</head>
+<body>
+
+  <!-- menu -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+
+      <a class="navbar-brand" href="#inicio">
+        Reconto de Clarice
+      </a>
+
+      <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menuPrincipal"
+        aria-controls="menuPrincipal"
+        aria-expanded="false"
+        aria-label="Abrir menu">
+
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Início</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Nosso acervo
+            </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#filosofia">
+                  Filosofia
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#poesia">
+                  Poesia
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#romance">
+                  Romance
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre">Sobre nós</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">Contato</a>
+          </li>
+
+        </ul>
+
+        <!-- pesquisa-->
+        <form class="d-flex form-pesquisa ms-lg-3"
+          id="formPesquisa" role="search">
+
+          <input class="form-control campo-pesquisa me-2"
+            type="search"
+            id="campoPesquisa"
+            placeholder="Pesquisar livro..."
+            aria-label="Pesquisar livro">
+
+          <button class="btn btn-reconto me-2"
+            type="submit">
+            Buscar
+          </button>
+
+          <button class="btn btn-outline-secondary"
+            type="button"
+            id="limparPesquisa">
+            Limpar
+          </button>
+
+        </form>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- apresentacao -->
+  <main>
+
+    <section id="inicio" class="apresentacao text-center">
+
+      <div class="container">
+
+        <p class="text-uppercase destaque fw-bold">
+          Um universo de histórias
+        </p>
+
+        <h1 class="display-4 fw-bold">
+          Reconto de Clarice
+        </h1>
+
+        <p class="lead my-4 mx-auto" style="max-width: 680px;">
+          Entre páginas, capas e história:
+          encontre uma nova forma de ler.
+        </p>
+
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+
+          <a href="#livros" class="btn btn-reconto btn-lg">
+            Explore nosso acervo
+          </a>
+
+          <a href="#sobre"
+            class="btn btn-outline-secondary btn-lg">
+            Saiba mais
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- sobre -->
+    <section id="sobre" class="container text-center secao">
+
+      <h2 class="fw-bold mb-3">
+        Sobre o Reconto de Clarice
+      </h2>
+
+      <p class="lead text-muted mx-auto"
+        style="max-width: 800px;">
+        Bem-vindo ao nosso acervo! O Reconto de Clarice
+        é feito para conectar leitores apaixonados por
+        grandes obras de filosofia, poesia e romances marcantes.
+        Acreditamos que cada livro pode ganhar novas formas
+        de despertar sentimentos, ideias e descobertas.
+      </p>
+
+    </section>
+
+
+    <!-- acervo -->
+    <section id="livros" class="container secao">
+
+      <div class="text-center mb-5">
+
+        <h2 class="fw-bold">Nosso Acervo Principal</h2>
+
+        <p class="text-muted">
+          Explore nossos títulos de Filosofia, Poesia e Romance.
+        </p>
+
+      </div>
+
+      <div id="mensagemPesquisa" role="status"
+        aria-live="polite"></div>
+
+
+      <!-- filosofias -->
+      <section id="filosofia" class="categoria">
+
+        <h3 class="titulo-categoria fw-bold">
+          Filosofia e grandes reflexões
+        </h3>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+          <!-- O PROCESSO -->
+          <div class="col">
+            <article class="card card-livro">
+
+              <img src="./o process.jpg"
+                class="capa-livro"
+                alt="Capa de O Processo, de Franz Kafka">
+
+              <div class="card-body">
+
+                <h4 class="card-title">
+                  O Processo - Franz Kafka
+                </h4>
+
+                <p class="card-text">
+                  O Processo, romance do escritor tcheco
+                  Franz Kafka publicado postumamente em 1925,
+                  é uma das obras mais influentes do século XX.
+                  O livro narra a história absurda de um homem
+                  sufocado por um sistema judicial inacessível
+                  e incompreensível.
+                </p>
+
+                <p class="preco">R$ 49,90</p>
+
+                <a href="#contato"
+                  class="btn btn-reconto mt-2">
+                  Tenho interesse
+                </a>
+
+              </div>
+            </article>
+          </div>
+
+
+          <!-- gregor  samsa clt tadinho-->
+          <div class="col">
+            <article class="card card-livro">
+
+              <img src="./a metamorfose.jpg"
+                class="capa-livro"
+                alt="Capa de A Metamorfose, de Franz Kafka">
+
+              <div class="card-body">
+
+                <h4 class="card-title">
+                  A Metamorfose - Franz Kafka
+                </h4>
+
+                <p class="card-text">
+                  A Metamorfose, novela do escritor tcheco
+                  Franz Kafka publicada em 1915, é uma das
+                  obras mais influentes do século XX. O livro
+                  narra a história absurda de um caixeiro-viajante
+                  que acorda transformado em um inseto monstruoso
+                  e passa a ser sufocado pela rejeição e pelo
+                  abandono de sua própria família.
+                </p>
+
+                <p class="preco">R$ 50,90</p>
+
+                <a href="#contato"
+                  class="btn btn-reconto mt-2">
+                  Tenho interesse
+                </a>
+
+              </div>
+            </article>
+          </div>
+
+
+          <!-- doutor russo-->
+          <div class="col">
+            <article class="card card-livro">
+
+              <img src="./crime e castigo.jpg"
+                class="capa-livro"
+                alt="Capa de Crime e Castigo, de Dostoiévski">
+
+              <div class="card-body">
+
+                <h4 class="card-title">
+                  Crime e Castigo - Fiódor Dostoiévski
+                </h4>
+
+                <p class="card-text">
+                  Crime e Castigo, romance do escritor russo
+                  Fiódor Dostoiévski publicado em 1866, é uma
+                  das obras mais influentes da literatura mundial.
+                  O livro narra a história psicológica de um
+                  estudante pobre que comete um assassinato e
+                  acaba sufocado por uma paranoia insuportável
+                  e pelo remorso de sua própria mente.
+                </p>
+
+                <p class="preco">R$ 50,90</p>
+
+                <a href="#contato"
+                  class="btn btn-reconto mt-2">
+                  Tenho interesse
+                </a>
+
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- poesia-->
+      <section id="poesia" class="categoria">
+
+        <h3 class="titulo-categoria fw-bold">
+          Poesia e sentimentos
+        </h3>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+          <!-- pensamentos da poesia -->
+          <div class="col">
+            <article class="card card-livro">
+
+              <img src="./pensamentos.png"
+                class="capa-livro"
+                alt="Capa de Pensamentos em formato de poesia">
+
+              <div class="card-body">
+
+                <h4 class="card-title">
+                  Pensamentos em formato de poesia - Isabelle Flor
+                </h4>
+
+                <p class="card-text">
+                  Esta obra traduz em versos rápidos as dores
+                  do amadurecimento e as complexidades dos
+                  relacionamentos modernos. O livro narra a
+                  jornada íntima de uma alma que busca
+                  transmutar a vulnerabilidade em força,
+                  oferecendo ao leitor um espelho acolhedor
+                  para suas próprias feridas, decepções amorosas
+                  e processos de cura.
+                </p>
+
+                <p class="preco">R$ 29,90</p>
+
+                <a href="#contato"
+                  class="btn btn-reconto mt-2">
+                  Tenho interesse
+                </a>
+
+              </div>
+            </article>
+          </div>
+
+
+          <!-- poesia -->
+          <div class="col">
+            <article class="card card-livro">
+
+              <img src="./toda poesia.jpg"
+                class="capa-livro"
+                alt="Capa de Toda Poesia, de Paulo Leminski">
+
+              <div class="card-body">
+
+                <h4 class="card-title">
+                  Toda Poesia - Paulo Leminski
+                </h4>
+
+                <p class="card-text">
+                  Esta coletânea reúne a genialidade do autor
+                  curitibano que revolucionou a poesia brasileira
+                  com seus haicais, trocadilhos e versos de tom
+                  pop. O livro pulsa com o ritmo das ruas e o
+                  rigor da palavra exata, equilibrando o humor
+                  cotidiano com reflexões profundas sobre o
+                  tempo, o amor, a linguagem e a própria
+                  efemeridade da vida.
+                </p>
+
+                <p class="preco">R$ 39,90</p>
+
+                <a href="#contato"
+                  class="btn btn-reconto mt-2">
+                  Tenho interesse
+                </a>
+
+              </div>
+            </article>
+          </div>
+
+
+          <!-- livro feminista -->
+          <div class="col">
+            <article class="card card-livro">
+
+              <img src="./a princesa.jpg"
+                class="capa-livro"
+                alt="Capa de A princesa salva a si mesma neste livro">
+
+              <div class="card-body">
+
+                <h4 class="card-title">
+                  A princesa salva a si mesma neste livro - Amanda Lovelace
+                </h4>
+
+                <p class="card-text">
+                  Este volume de estreia da aclamada série
+                  de poesia contemporânea desconstrói os velhos
+                  contos de fadas para dar voz ao empoderamento
+                  feminino. O livro narra uma trajetória intensa
+                  de superação que atravessa o luto, o abuso e o
+                  trauma, mostrando que a verdadeira heroína da
+                  história não precisa de um príncipe para
+                  resgatá-la da sua própria torre.
+                </p>
+
+                <p class="preco">R$ 29,90</p>
+
+                <a href="#contato"
+                  class="btn btn-reconto mt-2">
+                  Tenho interesse
+                </a>
+
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- romance -->
+      <section id="romance" class="categoria">
+
+        <h3 class="titulo-categoria fw-bold">
+          Romances inesquecíveis
+        </h3>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+          <!-- queijo e goiabada -->
+          <div class="col">
+            <article class="card card-livro">
+
+              <img src="./romeu e julieta.jpg"
+                class="capa-livro"
+                alt="Capa de Romeu e Julieta, de William Shakespeare">
+
+              <div class="card-body">
+
+                <h4 class="card-title">
+                  Romeu e Julieta - William Shakespeare
+                </h4>
+
+                <p class="card-text">
+                  Esta trágica e atemporal obra-prima do teatro
+                  elisabetano é a história de amor mais famosa
+                  do mundo. O livro narra a paixão proibida e
+                  avassaladora de dois jovens pertencentes a
+                  famílias rivais de Verona, cuja união
+                  desesperada desafia o ódio ancestral de seus
+                  sangues e culmina em um destino fatal que
+                  sela o preço do amor verdadeiro.
+                </p>
+
+                <p class="preco">R$ 49,90</p>
+
+                <a href="#contato"
+                  class="btn btn-reconto mt-2">
+                  Tenho interesse
+                </a>
+
+              </div>
+            </article>
+          </div>
+
+
+          <!-- antes -->
+          <div class="col">
+            <article class="card card-livro">
+
+              <img src="./como eu era.jpg"
+                class="capa-livro"
+                alt="Capa de Como Eu Era Antes de Você">
+
+              <div class="card-body">
+
+                <h4 class="card-title">
+                  Como Eu Era Antes de Você - Jojo Moyes
+                </h4>
+
+                <p class="card-text">
+                  Este emocionante fenômeno da literatura
+                  contemporânea cruza os caminhos da jovem e
+                  excêntrica Louisa Clark com o do brilhante
+                  Will Traynor, que perdeu o gosto pela vida
+                  após um acidente que o deixou tetraplégico.
+                  O livro narra uma jornada comovente sobre
+                  escolhas difíceis, a capacidade de se
+                  reinventar e como o amor pode transformar
+                  profundamente a vida de alguém.
+                </p>
+
+                <p class="preco">R$ 39,90</p>
+
+                <a href="#contato"
+                  class="btn btn-reconto mt-2">
+                  Tenho interesse
+                </a>
+
+              </div>
+            </article>
+          </div>
+
+
+          <!-- diario -->
+          <div class="col">
+            <article class="card card-livro">
+
+              <img src="./diario.jpg"
+                class="capa-livro"
+                alt="Capa de Diário de uma Paixão, de Nicholas Sparks">
+
+              <div class="card-body">
+
+                <h4 class="card-title">
+                  Diário de uma Paixão - Nicholas Sparks
+                </h4>
+
+                <p class="card-text">
+                  Este aclamado clássico do romance moderno
+                  acompanha a arrebatadora história de amor
+                  entre Noah Calhoun e Allie Nelson, separados
+                  pela diferença social e pela guerra, mas
+                  unidos por uma conexão indestrutível. O livro
+                  narra uma promessa de fidelidade que atravessa
+                  décadas, mostrando o poder de um sentimento
+                  capaz de desafiar o tempo e até mesmo as
+                  barreiras da memória.
+                </p>
+
+                <p class="preco">R$ 39,90</p>
+
+                <a href="#contato"
+                  class="btn btn-reconto mt-2">
+                  Tenho interesse
+                </a>
+
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </section>
+
+    </section>
+
+
+    <!--  formulario contato-->
+    <section id="contato" class="container secao">
+
+      <div class="text-center mb-4">
+
+        <h2 class="fw-bold">Entre em contato</h2>
+
+        <p class="text-muted">
+          Quer saber mais sobre uma obra?
+          Envie sua mensagem para o Reconto de Clarice.
+        </p>
+
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-9 col-lg-7">
+
+          <form id="formContato" class="formulario-contato">
+
+            <div class="mb-3">
+              <label for="nome" class="form-label">
+                Nome completo
+              </label>
+
+              <input type="text"
+                class="form-control"
+                id="nome"
+                name="nome"
+                placeholder="Digite seu nome"
+                required>
+            </div>
+
+
+            <div class="mb-3">
+              <label for="email" class="form-label">
+                E-mail
+              </label>
+
+              <input type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="seuemail@exemplo.com"
+                required>
+            </div>
+
+
+            <div class="mb-3">
+              <label for="livro" class="form-label">
+                Livro de interesse
+              </label>
+
+              <select class="form-select"
+                id="livro"
+                name="livro"
+                required>
+
+                <option value="" selected disabled>
+                  Selecione uma obra
+                </option>
+
+                <option>O Processo</option>
+                <option>A Metamorfose</option>
+                <option>Crime e Castigo</option>
+                <option>Pensamentos em formato de poesia</option>
+                <option>Toda Poesia</option>
+                <option>A princesa salva a si mesma neste livro</option>
+                <option>Romeu e Julieta</option>
+                <option>Como Eu Era Antes de Você</option>
+                <option>Diário de uma Paixão</option>
+                <option>Outro assunto</option>
+
+              </select>
+            </div>
+
+
+            <div class="mb-3">
+              <label for="assunto" class="form-label">
+                Assunto
+              </label>
+
+              <select class="form-select"
+                id="assunto"
+                name="assunto"
+                required>
+
+                <option value="" selected disabled>
+                  Escolha o assunto
+                </option>
+
+                <option>Interesse em compra</option>
+                <option>Dúvida sobre um livro</option>
+                <option>Criação ou redesign de capas</option>
+                <option>Outro</option>
+
+              </select>
+            </div>
+
+
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">
+                Sua mensagem
+              </label>
+
+              <textarea class="form-control"
+                id="mensagem"
+                name="mensagem"
+                rows="4"
+                placeholder="Escreva sua mensagem aqui..."
+                required></textarea>
+            </div>
+
+
+            <button type="submit"
+              class="btn btn-reconto w-100">
+              Enviar mensagem
+            </button>
+
+            <p id="retornoContato"
+              class="mt-3 mb-0"
+              role="status"
+              aria-live="polite"></p>
+
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- footer -->
+  <footer class="py-4 mt-5">
+
+    <div class="container text-center">
+
+      <h3 class="fw-bold">Reconto de Clarice</h3>
+
+      <p>
+        Histórias que ganham novas formas.
+      </p>
+
+      <div class="d-flex justify-content-center gap-3 flex-wrap mb-3">
+        <a href="#inicio" class="text-decoration-none">Início</a>
+        <a href="#livros" class="text-decoration-none">Acervo</a>
+        <a href="#sobre" class="text-decoration-none">Sobre</a>
+        <a href="#contato" class="text-decoration-none">Contato</a>
+      </div>
+
+      <p class="text-muted mb-0">
+        &copy; 2026 Reconto de Clarice. Todos os direitos reservados.
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- pesquisa de forms -->
+  <script>
+    
+
+    const formularioPesquisa = document.getElementById("formPesquisa");
+    const campoPesquisa = document.getElementById("campoPesquisa");
+    const botaoLimpar = document.getElementById("limparPesquisa");
+    const mensagemPesquisa = document.getElementById("mensagemPesquisa");
+
+    const cardsLivros = document.querySelectorAll(".card-livro");
+    const categorias = document.querySelectorAll(".categoria");
+
+    function pesquisarLivros(termo) {
+      const pesquisa = termo
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase()
+        .trim();
+
+      let quantidadeEncontrada = 0;
+
+      cardsLivros.forEach(function(card) {
+        const texto = card.textContent
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .toLowerCase();
+
+        const corresponde = pesquisa === "" || texto.includes(pesquisa);
+
+        card.parentElement.style.display = corresponde ? "" : "none";
+
+        if (corresponde) {
+          quantidadeEncontrada++;
+        }
+      });
+
+      categorias.forEach(function(categoria) {
+        const possuiLivroVisivel = Array.from(
+          categoria.querySelectorAll(".card-livro")
+        ).some(function(card) {
+          return card.parentElement.style.display !== "none";
+        });
+
+        categoria.style.display = possuiLivroVisivel ? "" : "none";
+      });
+
+      if (pesquisa === "") {
+        mensagemPesquisa.style.display = "none";
+        mensagemPesquisa.textContent = "";
+      } else {
+        mensagemPesquisa.style.display = "block";
+
+        if (quantidadeEncontrada > 0) {
+          mensagemPesquisa.textContent =
+            quantidadeEncontrada === 1
+              ? "Encontramos 1 livro para sua pesquisa."
+              : "Encontramos " + quantidadeEncontrada +
+                " livros para sua pesquisa.";
+        } else {
+          mensagemPesquisa.textContent =
+            "Nenhum livro encontrado. Tente pesquisar pelo título ou autor.";
+        }
+      }
+
+      return quantidadeEncontrada;
+    }
+
+    formularioPesquisa.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const termo = campoPesquisa.value.trim();
+
+      if (termo === "") {
+        campoPesquisa.focus();
+        mensagemPesquisa.style.display = "block";
+        mensagemPesquisa.textContent =
+          "Digite o título, autor ou palavra que deseja pesquisar.";
+        return;
+      }
+
+      pesquisarLivros(termo);
+
+      document.getElementById("livros").scrollIntoView({
+        behavior: "smooth"
+      });
+
+      // Fecha o menu 
+      const menu = document.getElementById("menuPrincipal");
+
+      if (menu.classList.contains("show")) {
+        bootstrap.Collapse.getOrCreateInstance(menu).hide();
+      }
+    });
+
+    botaoLimpar.addEventListener("click", function() {
+      campoPesquisa.value = "";
+      pesquisarLivros("");
+
+      document.getElementById("menuPrincipal").classList.contains("show");
+
+      campoPesquisa.focus();
+    });
+
+
+    // contato
+
+    const formularioContato = document.getElementById("formContato");
+    const retornoContato = document.getElementById("retornoContato");
+
+    formularioContato.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      if (!formularioContato.checkValidity()) {
+        formularioContato.reportValidity();
+        return;
+      }
+
+      retornoContato.className = "mt-3 mb-0 text-success";
+      retornoContato.textContent =
+        "Formulário preenchido com sucesso! Esta é uma demonstração: " +
+        "a mensagem ainda não foi enviada. É necessário conectar um serviço de envio.";
+
+      formularioContato.reset();
+    });
+  </script>
+
+</body>
+</html>
